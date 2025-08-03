@@ -1,13 +1,27 @@
-const newArr = (arr) =>{
-  let new1 = [];
-  for (const i of arr){
-    if(i % 2 === 0){
-      new1.push(i);
-    }
-  }
-  return {new1, count: new1.length};
-}
-console.log(newArr([1,2,3,4,5,6,7,8,9]));
+// const repleceWith0 = (arr) =>{
+//   const min = Math.min(...arr);
+//   const max = Math.max(...arr);
+
+//   for(let i = 0; i<= arr.length; i++){
+//     if(arr[i]> min && arr[i]< max){
+//       arr[i] = 0;
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(repleceWith0([25,2,8,15,30,45,6,7,8,9]));
+
+// const newArr = (arr) =>{
+//   let new1 = [];
+//   for (const i of arr){
+//     if(i % 2 === 0){
+//       new1.push(i);
+//     }
+//   }
+//   return {new1, count: new1.length};
+// }
+// console.log(newArr([1,2,3,4,5,6,7,8,9]));
 
 // const findIndex = arr => 
 //   arr.map((val, idx) => val % 2 !== 0 ? idx : -1)
