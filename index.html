@@ -1,19 +1,80 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Three.js Model </title>
-  </head>
-  <body>
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
-        }
-      }
-    </script>
-    <script type="module" src="main.js"></script>
-  </body>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mehriddin | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glow {
+      text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-purple-900 via-black to-blue-900 text-white font-sans">
+
+  <!-- HERO -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-5xl md:text-6xl font-bold glow">Hey, I’m Mehriddin 🚀</h1>
+    <p class="mt-4 text-lg md:text-xl opacity-80 max-w-xl">
+      A Frontend Developer crafting clean, fast & beautiful experiences.
+    </p>
+    <a href="#projects" class="mt-8 bg-cyan-400 text-black px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform">
+      See My Work
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-cyan-400 mb-6">About Me</h2>
+    <p class="opacity-80 leading-relaxed">
+      I’m Mehriddin, a passionate frontend developer with a love for crafting
+      visually stunning and highly interactive websites. I specialize in modern
+      web technologies and enjoy pushing the boundaries of design and
+      performance.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-20 px-6 bg-black/30">
+    <h2 class="text-3xl font-bold text-cyan-400 mb-6 text-center">Skills</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <span class="bg-white/10 px-4 py-2 rounded-full">HTML</span>
+      <span class="bg-white/10 px-4 py-2 rounded-full">CSS</span>
+      <span class="bg-white/10 px-4 py-2 rounded-full">JavaScript</span>
+      <span class="bg-white/10 px-4 py-2 rounded-full">Tailwind CSS</span>
+      <span class="bg-white/10 px-4 py-2 rounded-full">React</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-cyan-400 mb-6 text-center">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white/10 p-6 rounded-lg hover:scale-105 transition-transform">
+        <h3 class="text-xl font-bold mb-2">Project One</h3>
+        <p class="opacity-80">An amazing project that showcases my skills in frontend development.</p>
+      </div>
+      <div class="bg-white/10 p-6 rounded-lg hover:scale-105 transition-transform">
+        <h3 class="text-xl font-bold mb-2">Project Two</h3>
+        <p class="opacity-80">Another stunning creation with beautiful animations and responsive design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-6 bg-black/30 text-center">
+    <h2 class="text-3xl font-bold text-cyan-400 mb-6">Get in Touch</h2>
+    <p class="opacity-80 mb-6">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+    <a href="mailto:youremail@example.com" class="bg-cyan-400 text-black px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform">
+      Say Hello
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 text-center text-sm opacity-60">
+    © 2025 Mehriddin. All rights reserved.
+  </footer>
+
+</body>
 </html>
