@@ -1,3 +1,22 @@
+const arr = [25,2,8,15,30,45,6,7,8,9];
+const exampleObj = {
+    name: 'John',
+    age: 30,
+    city: 'New York',
+    study:{
+        subject: 'Mathematics',
+        year: 2023
+    },
+    isMarried: false
+}
+
+// console.log(Object.entries(exampleObj));
+// console.log(arr.map(val => val));
+// console.log(arr.filter(val => val > 10));
+// console.log(arr.reduce((acc, val) => acc + val, 0));
+
+
+
 
 
 // const repleceWith0 = (arr) =>{
