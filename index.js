@@ -1,14 +1,56 @@
-const arr = [25,2,8,15,30,45,6,7,8,9];
-const exampleObj = {
-    name: 'John',
-    age: 30,
-    city: 'New York',
-    study:{
-        subject: 'Mathematics',
-        year: 2023
-    },
-    isMarried: false
+
+const fiveMinutes = 5 * 60 * 1000;
+
+const removeDublicates = (arr) =>{
+    return [...new Set(arr)]
 }
+
+const findAverage = (arr) =>{
+    const sum = arr.reduce((acc, num) => acc + num, 0);
+    return sum / arr.length;
+}
+
+const findMax = (arr) =>{
+    return arr.reduce((acc, num) => acc > num ? acc : num, arr[0])
+}
+
+const countLetter = (str, letter) =>{
+    const regex = new RegExp(letter, 'g');
+    const matches = str.match(regex);
+    return  matches.length;    
+}
+
+const isPalindrome = (str) =>{
+    return str.split('').reverse().join('') === str
+}
+
+const reverseStr = (str) =>{
+    return str.split('').reverse().join('');
+}
+
+
+
+
+// const map  = new Map();
+
+// map.set('name', "Mehriddin");
+// map.set(21, "age");
+// map.set({uni: "PDP University"}, "object key");
+
+// console.log(map.get('name'));
+
+
+// const arr = [25,2,8,15,30,45,6,7,8,9];
+// const exampleObj = {
+//     name: 'John',
+//     age: 30,
+//     city: 'New York',
+//     study:{
+//         subject: 'Mathematics',
+//         year: 2023
+//     },
+//     isMarried: false
+// }
 
 // console.log(Object.entries(exampleObj));
 // console.log(arr.map(val => val));
